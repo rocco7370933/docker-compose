@@ -1,0 +1,10 @@
+version: '1'
+servicer:
+        jupyter-tutorial:
+        image: jupyter/base-notebook
+        contaioner_name: jupyter-notebook
+        ports:
+              - "8888.8888"
+        volumes:
+                - ./work:/home/iot/work/
+        command: start-notebook.sh --NotebookApp.token='  '   
